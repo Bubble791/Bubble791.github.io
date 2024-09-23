@@ -2,56 +2,45 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-type FeatureItem = {
+type DisplayItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+  Svg: string;
+  tag: string;
 };
 
-const FeatureList: FeatureItem[] = [
+const GenerationIVCatalog: DisplayItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Pokémon Diamond',
+    Svg: require('@site/static/img/boxart/1015.jpg').default,
+    tag: 'getting-started/dp'
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'Pokémon Pearl',
+    Svg: require('@site/static/img/boxart/1016.jpg').default,
+    tag: 'getting-started/dp'
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Pokémon Platinum',
+    Svg: require('@site/static/img/boxart/3541.jpg').default,
+    tag: 'getting-started/pt'
+  },
+  {
+    title: 'Pokémon HeartGold',
+    Svg: require('@site/static/img/boxart/4787.jpg').default,
+    tag: 'getting-started/hgss'
+  },
+  {
+    title: 'Pokémon SoulSilver',
+    Svg: require('@site/static/img/boxart/4788.jpg').default,
+    tag: 'getting-started/hgss'
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, tag }: DisplayItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
+    <a className={clsx(styles.ds_boxart)} href={tag}>
+      <img className="shadow--md rounded-img" src={Svg} role="img" />
+    </a>
   );
 }
 
@@ -59,8 +48,18 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+      <h2>About</h2>
+        <p>Generation IV and V hacking has seen a resurgence in popularity. With this comes new research, tools, and methods that can be applied to the game.
+          However, most of the public-facing documentation about the DS Pokémon hacking scenes are significantly outdated, and refer to methodologies which are obselete or unstable.
+        </p>
+        <p>This wiki aims to rectify this by providing the up-to-date information necessary to modify the Generation IV and V Pokémon games.</p>
+        <h2>Getting Started</h2>
+        <p>To get started, select the game you are hacking below. You will then be brought to a landing page which will provide more detailed information.</p>
+
+        <hr></hr>
+      <h3 className={styles.header_label}>Generation IV</h3>
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {GenerationIVCatalog.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

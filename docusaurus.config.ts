@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: '改版资料库',
-  tagline: 'Dinosaurs are cool',
+  tagline: '耿耿耿耿鬼酱的改版笔记',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
