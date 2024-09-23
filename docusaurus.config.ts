@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: '改版资料库',
   tagline: '耿耿耿耿鬼酱的改版笔记',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.ico',
 
   // Set the production url of your site here
   url: 'https://bubble791.github.io/',
@@ -69,9 +69,14 @@ const config: Config = {
       title: 'Pokémon Hacking',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/test.svg',
       },
       items: [
+        // 语言切换
+        // {
+        //   type: "localeDropdown",
+        //   position: "left",
+        // },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -89,16 +94,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '个人链接',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'B站',
+              href: 'https://space.bilibili.com/21569445',
             },
           ],
         },
         {
-          title: 'Community',
+          title: '友情链接',
           items: [
             {
               label: 'Stack Overflow',
@@ -115,7 +120,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: '更多',
           items: [
             {
               label: 'Blog',
@@ -128,7 +133,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 耿耿耿耿鬼酱, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -14,26 +14,6 @@ const GenerationIVCatalog: DisplayItem[] = [
     Svg: require('@site/static/img/boxart/1015.jpg').default,
     tag: 'getting-started/dp'
   },
-  {
-    title: 'Pokémon Pearl',
-    Svg: require('@site/static/img/boxart/1016.jpg').default,
-    tag: 'getting-started/dp'
-  },
-  {
-    title: 'Pokémon Platinum',
-    Svg: require('@site/static/img/boxart/3541.jpg').default,
-    tag: 'getting-started/pt'
-  },
-  {
-    title: 'Pokémon HeartGold',
-    Svg: require('@site/static/img/boxart/4787.jpg').default,
-    tag: 'getting-started/hgss'
-  },
-  {
-    title: 'Pokémon SoulSilver',
-    Svg: require('@site/static/img/boxart/4788.jpg').default,
-    tag: 'getting-started/hgss'
-  },
 ];
 
 function Feature({ title, Svg, tag }: DisplayItem) {
@@ -48,16 +28,20 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-      <h2>About</h2>
-        <p>Generation IV and V hacking has seen a resurgence in popularity. With this comes new research, tools, and methods that can be applied to the game.
-          However, most of the public-facing documentation about the DS Pokémon hacking scenes are significantly outdated, and refer to methodologies which are obselete or unstable.
-        </p>
-        <p>This wiki aims to rectify this by providing the up-to-date information necessary to modify the Generation IV and V Pokémon games.</p>
-        <h2>Getting Started</h2>
-        <p>To get started, select the game you are hacking below. You will then be brought to a landing page which will provide more detailed information.</p>
+        {/* 图片滚动 */}
+        {/*<div className={styles.screenshots}>
+          <div className={styles.slider}>
+            <img className="screen" src="/img/boxart/1015.jpg" alt="Image 1"/>
+            <img className="screen" src="/img/boxart/1016.jpg" alt="Image 2"/>
+            <img className="screen" src="/img/boxart/1016.jpg" alt="Image 3"/>
+          </div>
+        </div>*/}
 
-        <hr></hr>
-      <h3 className={styles.header_label}>Generation IV</h3>
+        <h2>关于</h2>
+        <p>测试测试</p>
+        <p><a href='https://space.bilibili.com/21569445'>个人B站</a></p>
+        <hr />
+        <h3 className={styles.header_label}>汉化作品</h3>
         <div className="row">
           {GenerationIVCatalog.map((props, idx) => (
             <Feature key={idx} {...props} />

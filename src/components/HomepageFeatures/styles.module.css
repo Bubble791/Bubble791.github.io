@@ -1,3 +1,25 @@
+:root {
+  --gray: #606060;
+	--pale-gray: #d3d3d3;
+	--light-gray: #ededed;
+	--white: #ffffff;
+	--select: #61e2cf; /* tirqoise */
+	--highlight: #61b5e2; /* light-blue */
+	--fade-high: #92bacf; /* light fade for background color */
+	--dark-bg: #3a4964; /* dark-blue */
+	--darker-bg: #334159; /* darker-blue */
+	--background: #3a4964; /* standard background (package manager) */
+	--black: #283244;
+	--yellow: #ddcf4d;
+	--orange: #dd874d;
+	--red: #ed6868;
+	--green: #7ddd4d;
+	--pale-bg: #dadfe5;
+	--mouse-x: 0;
+	--mouse-y: 0;
+  --slideCount: 2
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -24,12 +46,93 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 4px;
 }
 
-img {
+/* img {
   border-radius: 8px;
-}
+} */
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*图片窗口滚动效果*/
+/* .screenshots {
+  background-color: var(--gray);
+  border: .252rem solid var(--white);
+  position: absolute;
+  width: 12.24rem;
+  height: 12.096rem;
+  right: 10%;
+  margin-top: calc(4.914rem + 0.504rem);
+  overflow: hidden;
+  border-radius: .504rem;
+  pointer-events: none;
+  -webkit-box-shadow: 0 .252rem .378rem rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 .252rem .378rem rgba(0, 0, 0, 0.35);
+  box-shadow: 0 .252rem .378rem rgba(0, 0, 0, 0.35)
+}
+
+.screenshots img {
+  width: 16.128rem;
+  height: 12.096rem
+}
+
+.slider {
+  animation: scrollScreens calc(5s * var(--slideCount)) linear infinite;
+  width: calc(16.128rem * var(--slideCount) + 32.256rem)
+}
+
+@keyframes scrollScreens {
+  0% {
+      transform: translateX(0)
+  }
+
+  100% {
+      transform: translateX(calc(-16.128rem * var(--slideCount)))
+  }
+} */
+
+.pkgContainer {
+  background-color: rgba(255,255,255,0.2);
+  color: var(--white);
+  font-size: 1.008rem;
+  height: calc(2.016rem + 6.048rem);
+  width: 32%;
+  margin-top: 0;
+  margin-bottom: 36px;
+  margin-right: 2%;
+  border-radius: .504rem;
+  cursor: pointer;
+  position: relative;
+  display: inline-block
+  
+}
+
+.pkgimg {
+  position: absolute;
+  margin: 1.208rem 1.008rem 1.008rem 1.008rem;
+  border-radius: .252rem;
+  border: .126rem solid var(--white);
+  -webkit-box-shadow: 0 .504rem .504rem -0.504rem rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 .504rem .504rem -0.504rem rgba(0,0,0,0.75);
+  box-shadow: 0 .504rem .504rem -0.504rem rgba(0,0,0,0.75)
+}
+
+.containerh1 {
+  background-color: rgba(0,0,0,0);
+  font-size: 1.134rem;
+  max-width: 80%;
+  margin: 1.134rem .504rem 1.008rem 6.048rem;
+  position: absolute;
+  padding: 0
+}
+
+.containerh2 {
+  color: var(--highlight);
+  background-color: rgba(0,0,0,0);
+  font-size: .882rem;
+  margin: 2.646rem .504rem 1.008rem 6.048rem;
+  position: absolute;
+  padding: 0
 }
