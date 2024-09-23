@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bubble791.github.io/blog"/>
     <subtitle>改版资料库 Blog</subtitle>
-    <icon>https://bubble791.github.io/img/favicon.ico</icon>
+    <icon>https://bubble791.github.io/img/icon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://bubble791.github.io/blog/welcome</id>
