@@ -79,9 +79,15 @@ const config: Config = {
         // },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'gbaTutor',
           position: 'left',
-          label: 'Tutorial',
+          label: 'GBA资料',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'ndsTutor',
+          position: 'left',
+          label: 'NDS资料',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
