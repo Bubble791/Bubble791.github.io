@@ -10,32 +10,59 @@
 
 :root {
   --ifm-font-family-base: 'Raleway';
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #0314af;
+  --ifm-color-primary-dark: #03129e;
+  --ifm-color-primary-darker: #031195;
+  --ifm-color-primary-darkest: #020e7b;
+  --ifm-color-primary-light: #0316c1;
+  --ifm-color-primary-lighter: #0317c9;
+  --ifm-color-primary-lightest: #041ae3;
+  --ifm-background-color: #f2f2f2;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  font-feature-settings: 'lnum' 1;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #00b1c6;
+  --ifm-color-primary-dark: #009fb2;
+  --ifm-color-primary-darker: #0096a8;
+  --ifm-color-primary-darkest: #007c8b;
+  --ifm-color-primary-light: #00c3da;
+  --ifm-color-primary-lighter: #00cce4;
+  --ifm-color-primary-lightest: #02e4ff;
   --ifm-background-color: #000000;
+}
+
+code {
+  color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] code {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.menu__link {
+  font-size: .873rem;
+}
+
+.menu__link:hover {
+  background: var(--ifm-background-color);
+}
+
+.menu__link .menu__link--active {
+  background: var(--ifm-background-color);
+}
+
+.menu__link--sublist {
+  padding: 8px;
+  font-weight: bold;
+}
+
+ul .table-of-contents__link {
+  list-style: square;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Rubik';
   --ifm-leading: 8px;
 }
-
