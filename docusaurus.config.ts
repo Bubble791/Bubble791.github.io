@@ -90,7 +90,7 @@ const config: Config = {
           label: 'NDS资料',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Bubble791/Bubble791.github.io',
           label: 'GitHub',
           position: 'right',
         },
@@ -134,7 +134,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Bubble791/Bubble791.github.io',
             },
           ],
         },
