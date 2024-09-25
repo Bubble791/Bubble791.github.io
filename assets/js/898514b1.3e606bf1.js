@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9067],{9187:e=>{e.exports=JSON.parse('{"tags":[{"label":"GBA \u56fe\u5f62","permalink":"/docs/tags/gba-\u56fe\u5f62","count":5},{"label":"GBA \u6559\u7a0b","permalink":"/docs/tags/gba-\u6559\u7a0b","count":5}]}')}}]);
