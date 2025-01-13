@@ -1,3 +1,12 @@
+---
+sidebar_position: 1
+tags:
+  - NDS 教程
+---
+
+> 作者: [泡泡](https://github.com/Bubble791) <br />
+---
+
 # 如何从hgss的反编译源码里将一段函数完整的移植到hg-engine
 
 准备工作：
